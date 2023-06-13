@@ -4,46 +4,61 @@ let arr_db = []
 let arr_match = []
 // 截取的数组
 let arr_slice = []
+// 当前页数
+let page_now = 1;
 
-// 发送 ajax 请求
-$.ajax({
-    // url
-    url: 'https://gist.githubusercontent.com/Miserlou/c5cd8364bf9b2420bb29/raw/2bf258763cdddd704f8ffd3ea9a3e81d25e2c6f6/cities.json',
-    // 请求类型
-    type: 'GET',
-    // 响应体结果
-    dataType: 'json',
-    // 成功的回调
-    success: function (data) {
-        // init(data);
+// 成功回调
+const success = (data) => {
+    // init(data);
+    // 只获取 100 条
+    arr_db = data.slice(0, 100);
+    arr_match = arr_db;
+    // 截取 5 条数据
+    // arr_slice = arr_match.slice(0, 5);
 
-        // 只获取 100 条
-        arr_db = data.slice(0, 100);
-        arr_match = arr_db;
-        // 截取 5 条数据
-        arr_slice = arr_match.slice(0, 5);
+    // 调用分页条和数据渲染函数
+    init();
+    pagination();
+}
 
-        // 调用分页条和数据渲染函数
-        pagination()
-    },
-    // 超时时间
-    timeout: 2000,
-    // 失败的回调
-    error: function () {
-        alert('出错啦!!');
-    },
-});
+// 获取数据
+function getCityInfo() {
+    // 发送 ajax 请求
+    $.ajax({
+        url: 'https://gist.githubusercontent.com/Miserlou/c5cd8364bf9b2420bb29/raw/2bf258763cdddd704f8ffd3ea9a3e81d25e2c6f6/cities.json',
+        // 请求类型
+        type: 'GET',
+        // 响应体结果
+        dataType: 'json',
+        // 成功的回调
+        success: success,
+        // 超时时间
+        timeout: 2000,
+        // 失败的回调
+        error: function () {
+            alert('出错啦!!');
+        },
+    });
+}
 
-// 数据渲染
-function init(data) {
+getCityInfo();
 
+// 清空数据
+function clear() {
     // 初始化
     $('#city').val('')
     $('.info_wrap').html('');
     $('.search_box').remove();
+}
+
+// 数据渲染
+function init() {
+    $('.info_wrap').html('');
+
+    arr_slice = arr_match.slice((page_now - 1) * 5, page_now * 5);
 
     // 获取每条数据，并进行渲染
-    $.each(data, (i, n) => {
+    $.each(arr_slice, (i, n) => {
         $('.info_wrap').append(`
             <li>
                 <p class="info_wrap_title">城市-${n.city}</p>
@@ -67,7 +82,8 @@ function search() {
     $('#search_ico').on('click', function () {
         if ($('#city').val().trim()) {
             if (arr_match.length != 0) {
-                // 有数据就渲染数据和搜索框 
+                // 有数据就渲染数据和搜索框
+                init();
                 pagination();
             } else {
                 // 没有数据，则显示提示语（暂无相关搜索）
@@ -77,6 +93,7 @@ function search() {
         } else {
             // 如果没有数据，则全部匹配全部
             arr_match = arr_db;
+            init();
             pagination();
             // $('.info_wrap').html(`<p class="info_null">暂无相关搜索</p>`);
         }
@@ -84,56 +101,79 @@ function search() {
 
     // 键盘事件，根据键盘输入的字符检索数据
     $('#city').on('keyup', (e) => {
-        // 判断搜索框是否有数据
-        if ($('#city').val().trim()) {
-            // 先清空
-            arr_match = [];
-            $('.search_box').stop().remove();
+        if (e.keyCode >= 65 && e.keyCode <= 90 || e.keyCode === 8) {
 
-            // 再渲染
-            $('.search').append(`<ul class='search_box'></ul>`)
+            // 判断搜索框是否有数据
+            if ($('#city').val().trim()) {
+                // 正则匹配 个位数[1-9] 个位数后的位数[0-9]
+                let regNum = /^[a-zA-Z\s]*$/
+                if (regNum.test($('#city').val())) {
+                    // 先清空
+                    arr_match = [];
+                    $('.search_box').stop().remove();
 
-            // 判断是否匹配到数据
-            $.each(arr_db, (i, n) => {
-                if (n.city.toUpperCase().indexOf($('#city').val().toUpperCase().trim()) != -1 || n.state.toUpperCase().indexOf($('#city').val().toUpperCase().trim()) != -1) {
-                    arr_match.push(n)
-                    $('.search_box').append(`<li>${n.city}, ${n.state}</li>`);
-                    $('.search_box').stop().hide();
+                    // 再渲染
+                    $('.search').append(`<ul class='search_box'></ul>`)
+
+                    // 判断是否匹配到数据
+                    $.each(arr_db, (i, n) => {
+                        if (n.city.toUpperCase().trim().indexOf($('#city').val().toUpperCase().trim()) != -1 || n.state.toUpperCase().indexOf($('#city').val().toUpperCase().trim()) != -1) {
+
+                            arr_match.push(n)
+                            $('.search_box').append(`<li>${n.city}, ${n.state}</li>`);
+                            $('.search_box').stop().hide();
+                        }
+                    })
+
+                    // 鼠标离开就让搜索提示框消失
+                    $('.search_box').stop().slideDown(function () {
+                        $('.search').on('mouseleave', function () {
+                            $('.search_box').stop().slideUp(function () {
+                                $('.search_box').remove();
+                            });
+                        })
+                    });
+
+                    // 判断是否检索到数据
+                    if (arr_match.length != 0) {
+                        $('#search_ico').click();
+
+                        $('.search_box').on('click', 'li', function () {
+                            arr_match = [arr_match[$(this).index()]];
+                            $('.search_box').remove();
+                            init();
+                            pagination();
+                        })
+
+                    } else {
+                        arr_match = []
+                        $('.search_box').stop().remove();
+                        $('.pagination').stop().remove();
+                        $('.info_wrap').html(`<p class="info_null">暂无相关搜索</p>`);
+                    }
+                } else {
+                    arr_match = []
+                    $('.search_box').stop().remove();
+                    $('.pagination').stop().remove();
+                    $('.info_wrap').html(`<p class="info_null">暂无相关搜索</p>`);
                 }
-            })
-
-            // 鼠标离开就让搜索提示框消失
-            $('.search_box').stop().slideDown(function () {
-                $('.search_box').on('mouseleave', function () {
-                    $('.search_box').stop().slideUp().remove();
-                })
-            });
-
-
-
-            // 判断是否检索到数据
-            if (arr_match.length != 0) {
-                $('.search_box').on('click', 'li', function () {
-                    arr_match = [arr_match[$(this).index()]];
-                    pagination();
-                })
 
             } else {
-                arr_match = []
-                $('.search_box').stop().remove();
-                $('.pagination').stop().remove();
-                // $('.info_wrap').html(`<p class="info_null">暂无相关搜索</p>`);
-            }
-        } else {
-            $('.search_box').stop().slideUp(function () {
-                $('.search_box').stop().remove();
-            })
+                arr_match = arr_db;
+                init();
+                pagination();
+                $('.search_box').stop().slideUp(function () {
+                    $('.search_box').stop().remove();
+                })
 
+            }
         }
+
 
         // 回车搜索
         if (e.keyCode === 13) {
             $('#search_ico').click();
+            $('.search_box').remove();
         }
     })
 
@@ -145,14 +185,14 @@ search();
 // 分页条
 function pagination() {
 
-    // 当前页数
-    let page_now = 1;
     // 总页数
     let page_count = Math.ceil(arr_match.length / 5);
     // 截取5个数据
     // arr_slice = arr_match.slice((page_now - 1) * 5, page_now * 5);
     // 存放页码的数组
     let arr_page = [];
+
+    page_now = 1;
 
     // 渲染数据
     // init(arr_slice);
@@ -187,7 +227,7 @@ function pagination() {
         $('.pagination').stop(true).remove();
     }
 
-    // 调用该方法，动态渲染数据和页码条
+    // 调用该方法，动态渲染页码条
     init_pagination();
 
     // 动态添加点击事件
@@ -196,6 +236,7 @@ function pagination() {
         $('.prev').on('click', function () {
             if (page_now > 1) {
                 page_now--;
+                init();
                 init_pagination();
             }
 
@@ -205,6 +246,7 @@ function pagination() {
         $('.next').on('click', function () {
             if (page_now < page_count) {
                 page_now++;
+                init();
                 init_pagination();
             }
 
@@ -213,8 +255,7 @@ function pagination() {
         // 点击跳转页数
         $('.pagination').on('click', 'span', function () {
             page_now = $(this).html()
-            arr_slice = arr_match.slice((page_now - 1) * 5, page_now * 5)
-            init(arr_slice)
+            init()
 
             $('.pagination span').removeClass('active');
             $(this).addClass('active');
@@ -237,6 +278,7 @@ function pagination() {
                         // 页数不能大于总页数
                         if (page_count >= parseInt($('#go').val())) {
                             page_now = parseInt($('#go').val());
+                            init();
                             init_pagination();
                         } else {
                             $('#go').val('');
@@ -257,13 +299,14 @@ function pagination() {
 
     }
 
-    // 数据和页码条渲染
+    // 页码条渲染
     function init_pagination() {
+        // clear();
         // 截取5条数据
-        arr_slice = arr_match.slice((page_now - 1) * 5, page_now * 5);
+        // arr_slice = arr_match.slice((page_now - 1) * 5, page_now * 5);
 
         // 渲染数据
-        init(arr_slice);
+        // init(arr_slice);
 
         // 第几个页码条
         page_num = Math.ceil(page_now / 3);

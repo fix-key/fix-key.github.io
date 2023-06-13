@@ -158,6 +158,11 @@ input::-webkit-search-cancel-button {
     background-color: #1e90ff;
 }
 
+.search_box li.active {
+    color: #fff;
+    background-color: #1e90ff;
+}
+
 .info_null {
     font-size: 36px;
     font-family: "黑体";
