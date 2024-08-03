@@ -1,0 +1,175 @@
+{
+  "GeneralSituationDataList": {
+    "left": {
+      "left_title": "概况",
+      "GeneralSituationItemDataList": [
+        {
+          "id": 1,
+          "sub_title": "開發者",
+          "content": ["SIGONO"]
+        },
+        {
+          "id": 2,
+          "sub_title": "商店頁面",
+          "content": ["Steam","Nintendo eShop","GOG.com","Epic Games Store"],
+          "underline": true
+        },
+        {
+          "id": 3,
+          "sub_title": "官方網址",
+          "content": ["www.sigono.com"]
+        },
+        {
+          "id": 4,
+          "sub_title": "類型",
+          "content": ["视觉小说、冒险小说、互动小说"]
+        },
+        {
+          "id": 5,
+          "sub_title": "發行日期",
+          "content": ["Windows / macOS - 2021.09.01", "Nintendo Switch - 2022.05.11", "Xbox Game Pass - 2022.08.23"]
+        },
+        {
+          "id": 6,
+          "sub_title": "語言",
+          "content": ["繁體中文、簡體中文", "English、日本語"]
+        },
+        {
+          "id": 7,
+          "sub_title": "平台",
+          "content": ["PC / Mac", "Nintendo", "SwitchXbox"]
+        },
+        {
+          "id": 7,
+          "sub_title": "平均遊玩時間",
+          "content": ["10 - 12 小時"]
+        }
+      ]
+    },
+    "right": {
+      "right_title": "關於此遊戲",
+      "content": ["《OPUS：龍脈常歌》的最終版本，支援中文和日文語音演出，帶給玩家最完整的遊戲體驗。", "這是一個結合太空探索與冒險解謎的敘事遊戲。小行星「龍脈」，由於其礦藏蘊藏的巨大能量，成為眾人爭奪的目標，立志探索龍脈的少年，將與能唱出龍脈之歌的少女一同冒險，他將借用少女的聲音解謎，揭露宇宙的遠古神話。"]
+    }
+  },
+  "AboutUsItemDataList": [
+    {
+      "id": 1,
+      "title": "關於我們",
+      "AboutUsContentItemDataList": [
+        {
+          "id": 1,
+          "sub_title": "「透過故事創造體驗，為自己與別人帶來幸福。」",
+          "content": "SIGONO 成立於2013年，由兩位研究所認識的創辦人開始發跡，認為遊戲不僅是媒體，更是人傳達情感的橋樑，至今系列作OPUS全球下載量突破10,000,000，並於2018成為全台第一家取得日本法米通評價總分35 以上，榮登白金殿堂的作品。"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "我們的作品",
+      "AboutUsWorkItemDataList": [
+        {
+          "id": 1,
+          "sub_title": "OPUS: Rocket of Whispers",
+          "cover": "~assets/EchoOfStarSong/about_us_item_work_1.png"
+        },
+        {
+          "id": 2,
+          "sub_title": "OPUS: The Day We Found Earth",
+          "cover": "~assets/EchoOfStarSong/about_us_item_work_2.png"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "得獎",
+      "AboutUsContentItemDataList": [
+        {
+          "id": 1,
+          "sub_title": "OPUS: 龍脈常歌",
+          "content": "2022 - The Webby Awards - Webby Winner｜威比獎得主 <br /> 2022 - Independent Games Festival Awards - Excellence in Narrative Honorable Mentions｜IGF 最佳敘事大獎榮譽入選<br /> 2021 - 週刊ファミ通「とっておきインディー」<br /> 2021 - Gamescom Asia Games Award - Winner For Excellence In Audio｜最佳音樂音效大獎 <br /> 2021 - Gamescom Asia Games Award - Winner For Excellence In Design｜最佳遊戲設計大獎 <br /> 2021 - Gamescom Asia Games Award - Excellence in Narrative Finallist｜最佳敘事大獎決選 <br /> 2021 - Devgamm Awards - Nominated for Best Desktop Game｜最佳桌機遊戲決選 <br /> 2021 - IndiePlay Awards - Excellence in Narration｜最佳敘事大獎 <br /> 2021 - IndiePlay Awards - Excellence in Audio｜最佳聽覺效果大獎 <br /> 2021 - IndiePlay Awards - Nominated for the Indieplay Award｜indiePlay大獎決選作品 <br /> 2021 - Chainsaw Game&Music Festival - Best Game Narrative Winner｜最佳敘事大獎 <br /> 2021 - NYX Game Awards - Best Storytelling Gold Winner｜最佳故事大獎 <br /> 2021 - NYX Game Awards - Best Music Grand Winner｜最佳音樂音效大獎 <br /> 2021 - NYX Game Awards - Indie Game Gold Winner｜最佳獨立遊戲大獎 <br />"
+        },
+        {
+          "id": 2,
+          "sub_title": "OPUS: 靈魂之橋",
+          "content": "2018 - Famitsu Platinum Hall of Fame <br /> 2017 - Apple Editor Choice <br /> 2017 - Tokyo Sandbox Showcase <br /> 2017 - Busan BIC FEST Showcase <br /> 2018 - Indieplay - Best Narration <br /> 2017 - TpGS Indie Game Award - Best Narration <br /> 2017 - Google Play Best Indie Game <br /> 2017 - IMGA SEA - Excellence in Art <br /> 2017 - MomoCon 2017 Indie Awards Finalist <br />"
+        },
+        {
+          "id": 3,
+          "sub_title": "OPUS: 地球計劃",
+          "content": "2017 - TpGS Indie Game Award - Best Narration <br /> 2016 - Tokyo Game Show SOWN Official Selection <br /> 2016 - Indieplay - Best Mobile Game <br /> 2016 - Indieplay - Excellence In Audio Nomination <br /> 2016 - IMGA SEA - Excellence in Storytelling <br /> 2016 - IMGA - Best Meaningful Play Nomination <br /> 2016 - Google Editors' Choice <br /> 2015 - Haogamers Best of Asian Indie Games 2015 - Most Original<br />"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "海外媒體報導",
+      "AboutUsContentItemDataList": [
+        {
+          "id": 1,
+          "comment": "凭借优美的艺术风格和令人难忘的音乐，难怪 《OPUS》 赢得了如此多的赞誉。",
+          "author": "-Daniel Robson, IGN"
+        },
+        {
+          "id": 2,
+          "comment": "《OPUS》仍然是除西方以外在任何地方都非常受欢迎和高度评价的独立游戏系列之一，我真的希望这部游戏能在西方媒体和该地区取得突破。《龙脉常歌》看起来是那么的不可思议。",
+          "author": "-Rami Ismail"
+        },
+        {
+          "id": 3,
+          "comment": "《OPUS》系列是那么的富有魅力。",
+          "author": "-Gita Jackson, Kotaku"
+        },
+        {
+          "id": 4,
+          "comment": "尽管游戏的体量不大，但是它所讲述的故事却饱含情感，请确保你游玩时旁边有纸巾备着。",
+          "author": "-Lori.h, Jay is games"
+        },
+        {
+          "id": 5,
+          "comment": "《OPUS》系列的宗旨就在于遨游宇宙、饱览星空。",
+          "author": "-Joe Donnelly, Rock Paper Shotgun"
+        },
+        {
+          "id": 6,
+          "comment": "如果你喜欢捧着一本好书、也喜欢坐来下体验一场精彩的游戏，那么《灵魂之桥》将会是一个度过下午的愉快方式。",
+          "author": "-Morgan Sleeper, Nintendo Life"
+        },
+        {
+          "id": 7,
+          "comment": "我越来越喜欢这种讲故事的方式，它真的非常适合媒体。",
+          "author": "-Thomas Faust, IndieGames.com"
+        },
+        {
+          "id": 8,
+          "comment": "从本质上讲，这就是一个关于爱、友谊和接受无常的很简单的故事，但它讲述得是如此精彩，每个人都能沉浸并享受其中。",
+          "author": "- Iain Garner, Co-Founder of Video Game Publisher Neon Doctrine"
+        },
+        {
+          "id": 9,
+          "comment": "地球を探して宇宙を探索するロマンだけでなく、ストーリー面では宇宙船OPUS号に乗ったハカセとの成長の物語も魅力となっている。",
+          "author": "-IGN Japan"
+        },
+        {
+          "id": 10,
+          "comment": "愛に満ちたSFストーリーと、静けさを紡ぐサウンドが心に染みます。",
+          "author": "-レビュアーナム子＜ファミ通 No.1513＞"
+        },
+        {
+          "id": 11,
+          "comment": "ある大災害をきっかけに荒廃した世界でのストーリーも魅力のひとつだが、『OPUS 魂の架け橋』の世界観を支える美しいBGMや、効果音、そして、温かみのあるイラストにも注目したい。",
+          "author": "-ファミ通"
+        },
+        {
+          "id": 12,
+          "comment": "エンディングの味わい深さは一級品だ。",
+          "author": "-4Gamer"
+        },
+        {
+          "id": 13,
+          "comment": "映画でしたらもちろん「禁断の惑星」そして「2001年宇宙の旅」、小説でしたらアイザック・アシモフあたりを好むのでしたら、確実に心の琴線に触れることうけあいです。",
+          "author": "-オクトバ OCTOBA"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "GamesMainContentList": [
+    {
+      "id": 1,
+      "title": "龍脈常歌",
+      "content": "<p>ECHO OF STARSONG</p> <p><i>“We will find each other, no matter how long it takes.”</i></p>",
+      "url": "/games/EchoOfStarSong"
+    },
+    {
+      "id": 2,
+      "title": "靈魂之橋",
+      "content": "<p>ROCKET OF WHISPERS</p> <p><i>“If the cosmos was not what brought us together, the cosmos never was.”</i></p>",
+      "url": "/games/RocketOfWhispers"
+    },
+    {
+      "id": 3,
+      "title": "地球計劃",
+      "content": "<p>THE DAY WE FOUND EARTH</p> <p><i>“As long as you remember LISA’s coordinates, I will always be with you.”</i></p>",
+      "url": "/games/TheDayWeFoundEarth"
+    },
+    {
+      "id": 4,
+      "title": "心相吾山",
+      "content": "<p>Prism Peak</p> <p><i>“Capture the moment , Learn to part”</i></p>",
+      "url": "/games/PrismPeak"
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "GeneralSituationDataList": {
+    "left": {
+      "left_title": "概况",
+      "GeneralSituationItemDataList":  [
+        {
+          "id": 1,
+          "sub_title": "開發者",
+          "content": ["SIGONO"]
+        },
+        {
+          "id": 2,
+          "sub_title": "商店頁面",
+          "content": ["Steam","Nintendo eShop","GOG.com","Epic Games Store"],
+          "underline": true
+        },
+        {
+          "id": 3,
+          "sub_title": "官方網址",
+          "content": ["www.sigono.com"]
+        },
+        {
+          "id": 4,
+          "sub_title": "類型",
+          "content": ["视觉小说、冒险小说、互动小说"]
+        },
+        {
+          "id": 5,
+          "sub_title": "發行日期",
+          "content": ["iOS, Android - 2017.09.14", "Windows, Mac - 2018.02.08", "Nintendo Switch - 2018.03.22"]
+        },
+        {
+          "id": 6,
+          "sub_title": "語言",
+          "content": ["繁體中文、簡體中文", "English、日本語、韩文"]
+        },
+        {
+          "id": 7,
+          "sub_title": "平台",
+          "content": ["iOS", "Andriod", "Switch", "Stream"]
+        },
+        {
+          "id": 7,
+          "sub_title": "平均遊玩時間",
+          "content": ["3 - 5 小時"]
+        }
+      ]
+    },
+    "right": {
+      "right_title": "關於此遊戲",
+      "content": ["《OPUS：靈魂之橋》： ", "廢墟靜靜伫立，幽靈低語，女巫和火箭技師之子堅守最後的心願。你將在唯美的末日世界冒險，走訪火箭工廠、宗教神壇、荒廢都市等地，完成他們的願望：尋找材料做出火箭，透過「宇宙葬」載著亡靈長眠于生命的初始於盡頭——銀河"]
+    }
+  },
+  "SettingItemDataList": [
+    {
+      "id": 1,
+      "title": "故事背景",
+      "content": "在銀河撐起信仰的時代，人類渴望觸及星辰的高度，他們將夢想寄託於火箭，期盼航向宇宙深處的故鄉。<br /> OPUS：靈魂之橋的故事發生於末日後的世界。<br /> 獨身一人的火箭技師後代，遇見從數十年前冬眠醒來的女巫，穿梭倒塌的遺跡、蒼白的大雪，用盡全力只為實現渴盼的心願：<br /> 發射一艘航向宇宙深處的火箭，透過「宇宙葬」帶罹難的靈魂歸返生命的初始與盡頭——銀河。",
+      "imgList": ["~assets/RocketOfWhispers/setting_item_1.png", "~assets/RocketOfWhispers/setting_item_2.png"],
+      "character": {
+        "id": 1,
+        "name": "林芳",
+        "name_en": "Lin fei",
+        "direction": "right"
+      }
+    },
+    {
+      "id": 2,
+      "title": "一趟在傷悲中尋得慰藉的旅程",
+      "content": "女巫與火箭技師之子決心踏上完成「宇宙葬」的旅程 <br /> 既為了亡者，也為了自己 <br /> 相信若火箭成功升空的那天到來，便能獲得心靈的慰藉，鼓起勇氣向過去道別",
+      "imgList": ["~assets/RocketOfWhispers/setting_item_2.png", "~assets/RocketOfWhispers/setting_item_3.png"],
+      "character": {
+        "id": 2,
+        "name": "约翰",
+        "name_en": "John",
+        "direction": "left"
+      }
+    },
+    {
+      "id": 3,
+      "title": "築起通往銀河的橋樑",
+      "content": "火箭是銀河的橋，透過火箭，人們將靈魂送往天堂。<br /> 為使徘徊世間的靈魂安息，與主角啟程前往世界各地找尋材料，一步步築起火箭，載著靈魂歸返位於銀河深處的故鄉。",
+      "imgList": ["~assets/RocketOfWhispers/setting_item_4.png", "~assets/RocketOfWhispers/setting_item_5.png"]
+    },
+    {
+      "id": 4,
+      "title": "探索遺跡遍佈的末日世界",
+      "content": "在唯美的世界展開冒險， <br /> 從小鎮邁向爆炸工業區、神秘的宗教祭壇與被隔離的城市， <br /> 從中拼湊末日發生時的點滴與真相，遇見獨自徘徊的幽靈，聆聽其牽掛已久的心願。",
+      "imgList": ["~assets/RocketOfWhispers/setting_item_6.png", "~assets/RocketOfWhispers/setting_item_7.png"]
+    }
+  ],
+  "AboutUsItemDataList": {
+    "ExperienceNowDataList": {
+      "id": 1,
+      "title": "現在體驗"
+    },
+    "AwardWinningDataList": {
+      "id": 1,
+      "title": "獲獎紀錄",
+      "content": [
+        "2018 - Famitsu - Platinum Hall of Fame",
+        "2018 - IMGA SEA - Excellence in Storytelling",
+        "2018 - IMGA Global - Excellence in Storytelling Runner Up",
+        "2018 - IMGA Global - Excellence in Audio Runner Up",
+        "2018 - IMGA China - Best Upcoming Game",
+        "2017 - Taipei Game Show Indie Game Award - Best Narration",
+        "2017 - Google Editors' Choice",
+        "2017 - Google Play Global Feature",
+        "2017 - App Store Global Feature",
+        "2017 - Google Play Best Indie Game",
+        "2017 - IMGA SEA - Excellence in Art",
+        "2017 - Tokyo Sandbox Showcase",
+        "2017 - Busan BIC FEST Showcase"
+      ]
+    },
+    "MediaReviewsDataList": {
+      "id": 1,
+      "title": "媒體好評",
+      "MediaReviewsContentDataList": [
+        {
+          "id": 1,
+          "comment": "「這是童話氛圍的末日故事，而科幻是有趣的包裝，包裝裡則是關於失去夢想後如何找回夢想，失落目標時如何堅持目標，以及關於這個主題的人性美好的故事。」",
+          "author": "- 電腦玩物"
+        },
+        {
+          "id": 2,
+          "comment": "「柔和又帶一點哀傷的音樂與筆觸營造整個氛圍，給與玩家極佳的遊戲體驗。」",
+          "author": "- Fami通 台灣"
+        }
+      ]
+    },
+    "OtherGamesDataList": {
+      "id": 1,
+      "title": "我們的另一款遊戲",
+      "OtherGamesContentDataList": [
+        {
+          "id": 1,
+          "img": "~assets/RocketOfWhispers/other_game_1.png",
+          "sub_title": "OPUS：地球計畫"
+        }
+      ]
+    }
+  }
+}

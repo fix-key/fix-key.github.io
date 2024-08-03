@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "pingFangSC-Regular";
+  color: #e8e0c4;
+}
+
+ul li {
+  list-style: none;
+}
+
+/* pingFang */
+@font-face {
+  font-family: "pingFangSC-Regular";
+  src: url("@/assets/fonts/pingfangFC/PingFang Regular_0.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+/*# sourceMappingURL=common.css.map */

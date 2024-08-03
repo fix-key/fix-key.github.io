@@ -1,0 +1,129 @@
+// 重置默认样式
+$bg_active: #eba518;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 0.65104167vw;
+  font-family: 'pingFangSC-Regular';
+  color: #e8e0c4;
+  user-select: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+// pingFang
+@font-face {
+  font-family: "pingFangSC-Regular";
+  src: url("@/assets/fonts/pingfangFC/PingFang Regular_0.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "pingFangSC-Light";
+  src: url("@/assets/fonts/pingfangFC/PingFang Light_0.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "pingFangSC-Bold";
+  src: url("@/assets/fonts/pingfangFC/PingFang Bold_0.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "pingFangSC-Medium";
+  src: url("@/assets/fonts/pingfangFC/PingFang Medium_0.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Microsoft
+@font-face {
+  font-family: "Microsoft-Himalaya";
+  src: url("@/assets/fonts/Microsoft/Microsoft-Himalaya.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Microsoft-Sans-Serif";
+  src: url("@/assets/fonts/Microsoft/Microsoft-Sans-Serif.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+::-webkit-scrollbar {
+  width: 0.2rem;
+  background-color: #EDF7F9;
+  border-radius: 0.4rem;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 100%;
+  background: #E8E0C4;
+  border-radius: 20px;
+}
+
+@keyframes fadeInTop {
+  from {
+    opacity: 0;
+    transform: translateY(-5rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOutTop {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(5rem);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(5rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOutDown {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-5rem);
+  }
+}
+
+// 淡入淡出效果
+.fade-enter-top-active {
+  animation: fadeInTop 1s ease forwards
+}
+
+.fade-leave-top-active {
+  animation: fadeOutTop 1s ease forwards
+}
+
+.fade-enter-down-active {
+  animation: fadeInDown 1s ease forwards
+}
+
+.fade-leave-down-active {
+  animation: fadeOutDown 1s ease forwards
+}

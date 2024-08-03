@@ -1,0 +1,127 @@
+{
+  "GeneralSituationDataList": {
+    "left": {
+      "left_title": "概况",
+      "GeneralSituationItemDataList":  [
+        {
+          "id": 1,
+          "sub_title": "開發者",
+          "content": ["SIGONO"]
+        },
+        {
+          "id": 2,
+          "sub_title": "商店頁面",
+          "content": ["Steam","Nintendo eShop","GOG.com","Epic Games Store"],
+          "underline": true
+        },
+        {
+          "id": 3,
+          "sub_title": "官方網址",
+          "content": ["www.sigono.com"]
+        },
+        {
+          "id": 4,
+          "sub_title": "類型",
+          "content": ["视觉小说、冒险小说、互动小说"]
+        },
+        {
+          "id": 5,
+          "sub_title": "發行日期",
+          "content": ["iOS, Android - 2017.09.14", "Windows, Mac - 2018.02.08", "Nintendo Switch - 2018.03.22"]
+        },
+        {
+          "id": 6,
+          "sub_title": "語言",
+          "content": ["繁體中文、簡體中文", "English、日本語、韩文"]
+        },
+        {
+          "id": 7,
+          "sub_title": "平台",
+          "content": ["iOS", "Andriod", "Switch", "Stream"]
+        },
+        {
+          "id": 7,
+          "sub_title": "平均遊玩時間",
+          "content": ["3 - 5 小時"]
+        }
+      ]
+    },
+    "right": {
+      "right_title": "關於此遊戲",
+      "content": [
+        "登上太空船，駛入無垠的宇宙──機器人艾姆背負拯救人類基因的希望，在廣袤的銀河間展開探索。",
+        "「艾姆，聽好囉，你的目標就是找到地球。我們約好了喔？」 「艾姆會找到地球！艾姆跟博士約好了……」",
+        "在地球的存在早已成為傳說的數十萬年後，人類麗莎與機器人艾姆，為實現約定展開跨時光的旅程， 穿越無窮的宇宙，用望遠鏡尋找被遺忘的故鄉：地球，探索生命的初衷，以及自己誕生的理由──"
+      ]
+    }
+  },
+  "GameIntroductionDataList": [
+    {
+      "title": "徜徉浩瀚星空，揭開埋藏的真相",
+      "content": "為找尋地球，墜入廣闊唯美的宇宙，操作太空望遠鏡逐步探索星域、銀河、星球。 搜索太空船內部的物品，揭開埋藏在角色及這個世界背後的真相。",
+      "order": "column"
+    },
+    {
+      "title": "身歷其境的感官饗宴",
+      "content": "悠然徜徉細膩雕琢的宇宙及飛船，體驗宇宙各處豐富多變的音景 聆聽操縱望遠鏡的每個當下，激起獨一無二的聲音漣漪。",
+      "order": "column-reverse"
+    }
+  ],
+  "AboutUsItemDataList": {
+    "ExperienceNowDataList": {
+      "id": 1,
+      "title": "現在體驗"
+    },
+    "AwardWinningDataList": {
+      "id": 1,
+      "title": "獲獎紀錄",
+      "content": [
+        "2017 - TpGS Indie Game Award - Best Narration",
+        "2017 - MomoCon",
+        "2017 Indie Awards Finalist",
+        "2016 - Tokyo Game Show SOWN Official Selection",
+        "2016 - IMGA SEA - Excellence in Storytelling",
+        "2016 - Indieplay - Best Mobile Game",
+        "2016 - Indieplay - Excellence In Audio Nomination",
+        "2016 - IMGA - Best Meaningful Play Nomination",
+        "2016 - Google Editors' Choice",
+        "2015 - Haogamers Best of Asian Indie Games",
+        "2015 - Most Original",
+        "2015 - Apple Best Game You've Never Played",
+        "2015 - Apple Best Of October"
+      ]
+    },
+    "MediaReviewsDataList": {
+      "id": 1,
+      "title": "媒體好評",
+      "MediaReviewsContentDataList": [
+        {
+          "id": 1,
+          "comment": "「...科幻故事裡一種更高層次的史詩夢想背景、以及科學幻想之中不可或缺的人性之追求，而這些在『 OPUS：地球計畫』中都能體驗到。」",
+          "author": "- 電腦玩物"
+        },
+        {
+          "id": 2,
+          "comment": "「…跳脫出在卡牌和休閒遊戲當道的「王道路線」，一個有始有終的作品，和一個豐富情感的故事。」",
+          "author": "- 哈利菠菜, 巴哈姆特"
+        },
+        {
+          "id": 3,
+          "comment": "「 ...一切都結束後，玩家必定能感受到那藏在深處的溫暖，絕對讓你久久感動不已。」",
+          "author": "- Welkin, 魔方網"
+        }
+      ]
+    },
+    "OtherGamesDataList": {
+      "id": 1,
+      "title": "我們的另一款遊戲",
+      "OtherGamesContentDataList": [
+        {
+          "id": 1,
+          "img": "~assets/RocketOfWhispers/other_game_1.png",
+          "sub_title": "OPUS：靈魂之橋"
+        }
+      ]
+    }
+  }
+}
